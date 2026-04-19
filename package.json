@@ -1,4 +1,20 @@
 {
+  "name": "@guoyunhe/oxfmt-config",
+  "version": "0.0.0",
+  "description": "A shared configuration for oxfmt by Guo Yunhe.",
+  "keywords": [
+    "oxfmt",
+    "oxfmt-config",
+    "lint",
+    "prettier",
+    "format",
+    "code-style",
+    "code-formatting",
+    "shared-config",
+    "typescript",
+    "eslint",
+    "prettier-config"
+  ],
   "homepage": "https://github.com/guoyunhe/oxfmt-config#readme",
   "bugs": {
     "url": "https://github.com/guoyunhe/oxfmt-config/issues"
@@ -8,6 +24,7 @@
     "url": "git+https://github.com/guoyunhe/oxfmt-config.git"
   },
   "funding": "https://github.com/sponsors/guoyunhe",
+  "license": "MPL-2.0",
   "author": {
     "name": "Guo Yunhe",
     "email": "i@guoyunhe.me"
