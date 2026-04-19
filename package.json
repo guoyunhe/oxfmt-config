@@ -3,53 +3,55 @@
   "version": "0.0.0",
   "description": "A shared configuration for oxfmt by Guo Yunhe.",
   "keywords": [
+    "code-formatting",
+    "code-style",
+    "eslint",
+    "format",
+    "lint",
     "oxfmt",
     "oxfmt-config",
-    "lint",
     "prettier",
-    "format",
-    "code-style",
-    "code-formatting",
+    "prettier-config",
     "shared-config",
-    "typescript",
-    "eslint",
-    "prettier-config"
+    "typescript"
   ],
   "homepage": "https://github.com/guoyunhe/oxfmt-config#readme",
   "bugs": {
     "url": "https://github.com/guoyunhe/oxfmt-config/issues"
+  },
+  "license": "MPL-2.0",
+  "author": {
+    "name": "Guo Yunhe",
+    "email": "i@guoyunhe.me",
+    "url": "https://guoyunhe.me"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/guoyunhe/oxfmt-config.git"
   },
   "funding": "https://github.com/sponsors/guoyunhe",
-  "license": "MPL-2.0",
-  "author": {
-    "name": "Guo Yunhe",
-    "email": "i@guoyunhe.me"
-  },
-  "type": "module",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    }
-  },
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "files": [
     "dist",
     "CHANGELOG.md",
     "LICENSE",
     "README.md"
   ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
   "scripts": {
     "build": "rive build",
     "build:watch": "rive build --watch",
     "ci:eslint": "eslint -f json src -o ./.ci/eslint.json",
     "lint": "eslint .",
     "lint:fix": "prettier --write . && eslint --fix .",
+    "format": "oxfmt .",
     "prepare": "husky",
     "start": "rive start",
     "test": "vitest run",
@@ -57,16 +59,6 @@
     "test:ui": "vitest --ui",
     "test:watch": "vitest"
   },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "lint-staged": {
-    "*.{cjs,cts,js,jsx,mjs,mts,ts,tsx,vue}": "eslint --fix",
-    "*.{cjs,css,cts,html,js,json,jsx,less,md,mjs,mts,scss,ts,tsx,vue,yaml,yml}": "prettier --write"
-  },
-  "prettier": "prettier-config-ali",
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
@@ -91,6 +83,16 @@
     "typescript": "^5.9.3",
     "vitest": "^3.2.4"
   },
+  "lint-staged": {
+    "*.{cjs,cts,js,jsx,mjs,mts,ts,tsx,vue}": "eslint --fix",
+    "*.{cjs,css,cts,html,js,json,jsx,less,md,mjs,mts,scss,ts,tsx,vue,yaml,yml}": "prettier --write"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "prettier": "prettier-config-ali",
   "rive": {
     "template": "node",
     "doc": {
