@@ -65,6 +65,7 @@
     "eslint-plugin-prettier": "^5.5.5",
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
+    "oxfmt": "^0.45.0",
     "prettier": "^3.8.3",
     "prettier-config-ali": "^1.5.0",
     "react": "^18.3.1",

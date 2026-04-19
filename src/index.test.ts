@@ -1,11 +1,15 @@
-import { oxfmtConfig } from '.';
+import config from '.';
 
-describe('oxfmtConfig', () => {
-  it('normal', async () => {
-    expect(oxfmtConfig('Foo', 'Bar')).toBe('Foo Bar');
+describe('oxfmt default config', () => {
+  it('should be defined', () => {
+    expect(config).toBeDefined();
   });
 
-  it('lastName upper case', async () => {
-    expect(oxfmtConfig('Foo', 'Bar', { lastNameUpperCase: true })).toBe('Foo BAR');
+  it('should be an object', () => {
+    expect(typeof config).toBe('object');
+  });
+
+  it('should match the default structure', () => {
+    expect(config).toEqual({});
   });
 });

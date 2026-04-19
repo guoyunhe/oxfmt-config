@@ -1,10 +1,3 @@
-export interface OxfmtConfigOptions {
-  lastNameUpperCase?: boolean;
-}
+import { defineConfig } from 'oxfmt';
 
-export function oxfmtConfig(firstName: string, lastName: string, options?: OxfmtConfigOptions) {
-  if (options?.lastNameUpperCase) {
-    return `${firstName} ${lastName.toLocaleUpperCase()}`;
-  }
-  return `${firstName} ${lastName}`;
-}
+export default defineConfig({});
