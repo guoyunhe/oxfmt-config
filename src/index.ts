@@ -1,3 +1,36 @@
 import { defineConfig } from 'oxfmt';
 
-export default defineConfig({});
+export default defineConfig({
+  arrowParens: 'always',
+  bracketSameLine: false,
+  bracketSpacing: true,
+  embeddedLanguageFormatting: 'auto',
+  endOfLine: 'lf',
+  htmlWhitespaceSensitivity: 'css',
+  insertFinalNewline: true,
+  // TODO: add detailed configuration for jsdoc
+  jsdoc: {},
+  jsxSingleQuote: true,
+  objectWrap: 'collapse',
+  printWidth: 100,
+  proseWrap: 'preserve',
+  quoteProps: 'as-needed',
+  semi: true,
+  singleAttributePerLine: false,
+  singleQuote: true,
+  // TODO: add detailed configuration for sortImports
+  sortImports: {},
+  sortPackageJson: {
+    sortScripts: true,
+  },
+  // I don't use Tailwind CSS
+  sortTailwindcss: false,
+  tabWidth: 2,
+  trailingComma: 'all',
+  useTabs: false,
+  vueIndentScriptAndStyle: false,
+
+  ignorePatterns: ['node_modules', 'dist'],
+
+  overrides: [],
+});
