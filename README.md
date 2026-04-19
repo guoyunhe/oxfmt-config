@@ -1,9 +1,9 @@
-# oxfmt-config
+# @guoyunhe/oxfmt-config
 
 ![Version](https://img.shields.io/npm/v/@guoyunhe/oxfmt-config)
 ![Downloads](https://img.shields.io/npm/dw/@guoyunhe/oxfmt-config)
 
-Your description...
+Shared configuration for oxfmt by Guo Yunhe.
 
 ## Install
 
