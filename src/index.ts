@@ -11,7 +11,7 @@ export default defineConfig({
   // TODO: add detailed configuration for jsdoc
   jsdoc: {},
   jsxSingleQuote: true,
-  objectWrap: 'collapse',
+  objectWrap: 'preserve',
   printWidth: 100,
   proseWrap: 'preserve',
   quoteProps: 'as-needed',
